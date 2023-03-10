@@ -15,7 +15,8 @@
 	<description>backend-services</description>
 
 	<modules>
-		<module>autoconfig</module>
+		<module>spring-auto-configuration</module>
+		<module>spring-custom-configuration</module>
 	</modules>
 
 	<properties>
