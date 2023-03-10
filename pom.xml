@@ -18,6 +18,7 @@
 		<module>spring-auto-configuration</module>
 		<module>spring-custom-configuration</module>
 		<module>spring-actuator</module>
+		<module>spring-profiles</module>
 	</modules>
 
 	<properties>
