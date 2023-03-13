@@ -10,7 +10,6 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScans(value = { @ComponentScan("com.epam.autoconfig.repository") })
 public class DataSourceConfig {
     @Bean
     public DataSource h2DataSource() {
