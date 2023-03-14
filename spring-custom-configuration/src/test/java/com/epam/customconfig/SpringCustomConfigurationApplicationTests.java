@@ -1,13 +1,14 @@
-package com.epam.autoconfig;
+package com.epam.customconfig;
 
-import com.epam.autoconfig.domain.User;
-import com.epam.autoconfig.repository.UserRepository;
+import com.epam.customconfig.domain.User;
+import com.epam.customconfig.repository.UserRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-@SpringBootTest(classes = SpringAutoConfigurationApplication.class)
-public class SpringAutoConfigurationApplicationTests {
+
+@SpringBootTest(classes = SpringCustomConfigurationApplication.class)
+public class SpringCustomConfigurationApplicationTests {
 
     @Autowired
     private UserRepository userRepository;

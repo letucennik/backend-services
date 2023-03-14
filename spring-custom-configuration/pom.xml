@@ -8,11 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.epam</groupId>
-    <artifactId>autoconfig</artifactId>
+    <artifactId>customconfig</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-auto-configuration</name>
-    <description>spring-auto-configuration</description>
-
+    <name>spring-custom-configuration</name>
+    <description>spring-custom-configuration</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

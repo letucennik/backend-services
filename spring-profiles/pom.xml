@@ -8,10 +8,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.epam</groupId>
-    <artifactId>autoconfig</artifactId>
+    <artifactId>profiles</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-auto-configuration</name>
-    <description>spring-auto-configuration</description>
+    <name>spring-profiles</name>
+    <description>spring-profiles</description>
 
     <dependencies>
         <dependency>
@@ -20,13 +20,28 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <spring.profiles.active>qa</spring.profiles.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 
 </project>
